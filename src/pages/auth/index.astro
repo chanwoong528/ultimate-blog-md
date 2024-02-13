@@ -1,0 +1,15 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ListSNSLogin from "../../components/React/Login/ListSNSLogin";
+---
+
+<Layout
+  title="Login"
+  description="Lorem ipsum dolor sit amet"
+  pubDate={new Date("August 08 2021")}
+  heroImage="/blog-placeholder-about.jpg"
+>
+  <h2>AUth index Page</h2>
+
+  <ListSNSLogin client:only />
+</Layout>

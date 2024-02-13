@@ -1,0 +1,16 @@
+---
+//@ts-nocheck
+
+import Layout from "../../layouts/Layout.astro";
+import ListGuestbook from "../../components/React/Guestbook/ListGuestbook";
+---
+
+<Layout
+  title="guestbook"
+  description="Lorem ipsum dolor sit amet"
+  pubDate={new Date("August 08 2021")}
+  heroImage="/blog-placeholder-about.jpg"
+>
+  <h2>Guestbook</h2>
+  <ListGuestbook client:only />
+</Layout>

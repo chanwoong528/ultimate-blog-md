@@ -10,11 +10,25 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/check": "^0.4.1",
     "@astrojs/mdx": "^2.1.1",
+    "@astrojs/react": "^3.0.10",
     "@astrojs/rss": "^4.0.5",
     "@astrojs/sitemap": "^3.0.5",
+    "@nanostores/persistent": "^0.9.1",
+    "@nanostores/react": "^0.7.1",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
     "astro": "^4.3.5",
-    "@astrojs/check": "^0.4.1",
-    "typescript": "^5.3.3"
+    "axios": "^1.6.7",
+    "firebase": "^10.8.0",
+    "nanostores": "^0.9.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.3.3",
+    "universal-cookie": "^7.0.2"
+  },
+  "devDependencies": {
+    "sass": "^1.70.0"
   }
 }

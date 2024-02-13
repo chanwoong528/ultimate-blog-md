@@ -1,0 +1,21 @@
+---
+//@ts-nocheck
+
+import Layout from "../../layouts/Layout.astro";
+
+import { getAllCategory } from "../../http/posts/ApiCategory";
+import NavPost from "../../components/React/Nav/NavPost";
+
+const postNavRes = await getAllCategory();
+const data = await postNavRes.data;
+---
+
+<Layout
+  title="posts"
+  description="Lorem ipsum dolor sit amet"
+  pubDate={new Date("August 08 2021")}
+  heroImage="/blog-placeholder-about.jpg"
+>
+  <h2>post index Page</h2>
+  <NavPost navData={data} client:only />
+</Layout>

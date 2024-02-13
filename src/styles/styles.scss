@@ -1,0 +1,22 @@
+@import "common/_font";
+@import "common/_reset";
+@import "common/_variable";
+
+:root {
+  --color-pri: #2534e7;
+  --color-sub: #978ab6;
+  --color-ter: #fcf7ff;
+  --color-qua: #1d1a27;
+  --font-size-h1: 24px;
+  --font-size-pri: 20px;
+  --font-size-sub: 16px;
+}
+body {
+}
+
+main {
+  margin: 0 auto;
+  border: 10px solid red;
+  max-width: 700px;
+  padding: 0 20px;
+}
