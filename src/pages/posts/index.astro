@@ -17,5 +17,5 @@ const data = await postNavRes.data;
   heroImage="/blog-placeholder-about.jpg"
 >
   <h2>post index Page</h2>
-  <NavPost navData={data} client:only />
+  {!!data ? <NavPost navData={data} client:only /> : null}
 </Layout>

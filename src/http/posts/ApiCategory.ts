@@ -6,6 +6,7 @@ export const getAllCategory = async () => {
     const categoryData = await categoriesRes.data;
     return categoryData;
   } catch (error) {
-    console.error("getAllCategory[error]: ", error);
+    console.warn("getAllCategory[error]: ", error);
+    return error;
   }
 };
